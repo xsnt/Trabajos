@@ -33,7 +33,7 @@ addComMap x = map (++",")x
 --6 Crie uma função htmlListItems :: [String] -> [String], que receba uma lista de strings e retorne outra lista 
 --contendo as strings formatadas como itens de lista em HTML.
 htmlListItems :: [String] -> [String] 
-htmlListItems x = map ((map (++"<LI>")x)"</LI>"++)x
+htmlListItems x = "<LI>" ++ x ++ "</LI>"
 
 --7 Crie uma função recursiva charFound :: Char -> String -> Bool, que verifique se o caracter (primeiro argumento) está contido na string (segundo argumento).
 charFound :: Char -> String -> Bool
