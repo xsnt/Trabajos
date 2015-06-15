@@ -31,7 +31,7 @@ class ObjectSet {
     /*Não, não existe a class star aqui, move along*/
     
     
-    // Adiciona objetos da classe RoundedRectangle ao ObjectSet.
+    // Adiciona objetos da classe Elipse ao ObjectSet.
     void addElipse(int n, Dimension dim, String path) {
         nShapes = n;
         elipse = new Elipse[n];
@@ -92,7 +92,7 @@ class ObjectSet {
             }
             else if("circle".equals(shapeType))
                     circles[i].mover();
-            else if("roundedRectangle".equals(shapeType))
+            else if("elipse".equals(shapeType))
                     elipse[i].mover();
         }
         System.out.println("moveAll");

@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.util.Random;
 
+/*Um ovo por uma estrela, fair trade*/
 
 public class Elipse {
     Dimension dim;
@@ -56,21 +57,22 @@ public class Elipse {
     public void draw(Graphics g) {
         g.setColor(Color.yellow); 
         g.fillRoundRect(pos.x, pos.y, width, height, 30, 30);
-        System.out.print(pos.x + "," + pos.y);
+        
     }
     
     
     public void mover() {
-       if("LinhaH".equals(path)){
+       System.out.println(path);
+        if("LinhaH".equals(path)){
            camLinhaH.mover();
-       }
-       if("ZigZag".equals(path)){
+        }
+        if("ZigZag".equals(path)){
            camZigZag.mover();
-       }
-       if("LinhaV".equals(path)){
+        }
+        if("LinhaV".equals(path)){
            camLinhaV.mover();
-       }
-       if("WUT".equals(path)){
+        }
+        if("WUT".equals(path)){
             camWut.mover();
         }
     }

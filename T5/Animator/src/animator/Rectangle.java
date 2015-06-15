@@ -65,17 +65,17 @@ public class Rectangle {
     }
     
     public void mover() {
-       if("LinhaH".equals(path)){
+        if("LinhaH".equals(path)){
            camLinha.mover();
        }
-       if("ZigZag".equals(path)){
+        if("ZigZag".equals(path)){
            camZigZag.mover();
        }
-            if("LinhaV".equals(path)){
+        if("LinhaV".equals(path)){
            camLinhaV.mover();
        }
-              if("WUT".equals(path)){
-            camWut.mover();
+        if("WUT".equals(path)){
+           camWut.mover();
         }
     }
     

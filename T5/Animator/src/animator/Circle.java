@@ -58,17 +58,17 @@ public class Circle {
         g.fillOval(pos.x, pos.y, width, height);
     }
     
-        public void mover() {
-       if("LinhaH".equals(path)){
+    public void mover() {
+        if("LinhaH".equals(path)){
            camLinhaH.mover();
-       }
-       if("ZigZag".equals(path)){
+        }
+        if("ZigZag".equals(path)){
            camZigZag.mover();
-       }
-       if("LinhaV".equals(path)){
+        }
+        if("LinhaV".equals(path)){
            camLinhaV.mover();
-       }
-         if("WUT".equals(path)){
+        }
+        if("WUT".equals(path)){
             camWut.mover();
         }
     }

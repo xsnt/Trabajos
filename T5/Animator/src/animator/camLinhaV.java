@@ -14,7 +14,9 @@ public class camLinhaV {
     
     public void mover(){
         pos.y += 3;
+        System.out.print(dim.height + "," + pos.y);
         if(pos.y > dim.height)
             pos.y = 0;
     }
+   
 }
